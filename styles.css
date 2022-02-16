@@ -96,17 +96,17 @@ li {
   padding-left: 20px;
   padding-top: 20px;
   justify-self: center;
-  background-color: #f9dc8a
+  background-color: #f9dc8a;
   font-size: 1.25rem;
 }
 
 #announcements {
   background-color: #00349b;
-  color:white;
+  color: white;
 }
 #trending {
   background-color: #00349b;
-  color:white;
+  color: white;
 }
 
 /* Header Grid Styling */
