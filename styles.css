@@ -6,7 +6,7 @@ html {
   --projectHeight: clamp(150px, 30vh, 30%);
   --projectWidth: clamp(150px, 30vw, 40%);
   font-family: Roboto, sans-serif;
-  background-color: #fce3d8;
+  background-color: #f9dc8a;
   --headerGridHeight: calc(1fr+10px);
 }
 body {
@@ -33,7 +33,7 @@ div {
 #sidebar {
   grid-column: 1;
   grid-row: 1/-1;
-  background-color: #a85fb6;
+  background-color: #d5e5e8;
 }
 .navBar {
   display: grid;
@@ -46,7 +46,7 @@ div {
 #header {
   grid-column: 2/4;
   grid-row: 1/2;
-  background-color: #d2b4d5;
+  background-color: #287cd4;
   box-shadow: 0px 2px 8px rgb(0 0 0 / 20%);
   display: grid;
   grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
@@ -84,9 +84,7 @@ li {
 .project {
   width: var(--projectWidth);
   height: var(--projectHeight);
-  background-color: white;
   box-shadow: 0px 2px 8px rgb(0 0 0 / 20%);
-  border-radius: 20px;
 }
 #projectDash {
   display: flex;
@@ -98,15 +96,17 @@ li {
   padding-left: 20px;
   padding-top: 20px;
   justify-self: center;
-  background-color: #fce3d8;
+  background-color: #f9dc8a
   font-size: 1.25rem;
 }
 
 #announcements {
-  background-color: #dacf88;
+  background-color: #00349b;
+  color:white;
 }
 #trending {
-  background-color: #dacf88;
+  background-color: #00349b;
+  color:white;
 }
 
 /* Header Grid Styling */
@@ -273,6 +273,9 @@ li {
   display: grid;
   grid-template-columns: 5px 1rem 1fr 3rem 3rem 3rem;
   grid-template-rows: 2rem 1.5rem 1fr 1rem 1rem;
+  border-left: 5px solid lightcoral;
+  border-radius: 5px;
+  background-color: #fdffff;
 }
 .projectHeader {
   font-weight: bold;
