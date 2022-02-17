@@ -1,13 +1,15 @@
 html {
   --sidebarLength: clamp(200px, 20%, 250px);
-  --rightbarLength: clamp(200px, 20%, 300px);
+  --rightbarLength: clamp(150px, 20%, 300px);
   --dashLength: minmax(300px, 80%);
   --searchHeight: clamp(75px, 15%, 250px);
   --projectHeight: clamp(150px, 30vh, 30%);
   --projectWidth: clamp(150px, 30vw, 40%);
   font-family: Roboto, sans-serif;
-  background-color: #f9dc8a;
+  background-color: var(--dashcolor);
   --headerGridHeight: calc(1fr+10px);
+  --dashcolor: #c2c2c2;
+  --aviSmallHeight: 2rem;
 }
 body {
   margin: 0px;
@@ -96,16 +98,17 @@ li {
   padding-left: 20px;
   padding-top: 20px;
   justify-self: center;
-  background-color: #f9dc8a;
+  background-color: var(--dashcolor);
   font-size: 1.25rem;
 }
 
 #announcements {
-  background-color: #00349b;
+  background-color: var(--dashcolor);
   color: white;
+  margin-top: 10px;
 }
 #trending {
-  background-color: #00349b;
+  background-color: var(--dashcolor);
   color: white;
 }
 
@@ -116,7 +119,7 @@ li {
   align-self: center;
 }
 .aviSmall {
-  height: 1.5rem;
+  height: var(--aviSmallHeight);
   justify-self: end;
   align-self: center;
 }
@@ -273,7 +276,7 @@ li {
   display: grid;
   grid-template-columns: 5px 1rem 1fr 3rem 3rem 3rem;
   grid-template-rows: 2rem 1.5rem 1fr 1rem 1rem;
-  border-left: 5px solid lightcoral;
+  border-left: 5px solid rgb(104, 200, 231);
   border-radius: 5px;
   background-color: #fdffff;
 }
@@ -302,4 +305,147 @@ li {
 .accentColor {
   grid-row: 1/6;
   grid-column: 1;
+}
+
+/* Announcements grid style */
+
+.announcements {
+  display: grid;
+  grid-template-rows: 2rem 1fr;
+  grid-template-columns: 1fr;
+}
+
+.announTitle {
+  grid-row: 1;
+  grid-column: 1;
+  font-size: 1.25rem;
+  padding: 10px;
+  color: black;
+}
+.announceContainer {
+  grid-row: 2;
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.2rem 1fr 1.2rem 1fr 1.2rem 1fr;
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  gap: 5px;
+}
+
+.anTitle {
+  font-size: 1.2rem;
+  color: black;
+}
+.anChild {
+  font-size: 0.7rem;
+  color: rgb(70, 70, 70);
+}
+.an1,
+.an2 {
+  border-bottom: 1px solid gray;
+}
+
+/*Trending Grid Settings */
+
+.trending {
+  display: grid;
+  grid-template-rows: 2rem 1fr;
+  grid-template-columns: 1fr;
+}
+.trendingTitle {
+  color: black;
+  grid-row: 1;
+  grid-column: 1;
+  font-size: 1.25rem;
+  padding: 10px;
+}
+
+.trendUser,
+.trendProject {
+  font-size: 0.75rem;
+}
+.trendingContainer {
+  display: grid;
+  grid-row: 2;
+  grid-column: 1;
+  grid-template-rows: repeat(11, 1rem);
+  grid-template-columns: 5rem 1fr;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  margin: 10px;
+  padding: 10px;
+}
+
+.trendU1 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.trendU2 {
+  grid-row: 4;
+  grid-column: 2;
+}
+
+.trendU3 {
+  grid-row: 7;
+  grid-column: 2;
+}
+
+.trendU4 {
+  grid-row: 10;
+  grid-column: 2;
+}
+.aviSmallT {
+  height: 2rem;
+}
+
+.trendAvi1 {
+  grid-row: 1 / 3;
+  grid-column: 1;
+  align-self: center;
+  justify-self: center;
+}
+
+.trendAvi2 {
+  grid-row: 4 / span 2;
+  grid-column: 1;
+  align-self: center;
+  justify-self: center;
+}
+
+.trendAvi3 {
+  grid-row: 7 / span 2;
+  grid-column: 1;
+  align-self: center;
+  justify-self: center;
+}
+.trendAvi4 {
+  grid-row: 10 / span 2;
+  grid-column: 1;
+  align-self: center;
+  justify-self: center;
+}
+
+.project1 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.project2 {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.project3 {
+  grid-column: 2;
+  grid-row: 8;
+}
+
+.project4 {
+  grid-column: 2;
+  grid-row: 11;
 }
