@@ -367,6 +367,9 @@ li {
 .trendProject {
   font-size: 0.75rem;
 }
+.trendProject {
+  color: rgb(156, 156, 156);
+}
 .trendingContainer {
   display: grid;
   grid-row: 2;
